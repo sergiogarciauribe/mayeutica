@@ -1,231 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Mayéutica para la Transformación Social: Espacios Lúdico-Pedagógicos para el Cambio</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayéutica - Tejiendo Cambio</title>
+    <meta name="description"
+        content="Espacios lúdico-pedagógicos para la transformación social, familiar y comunitaria">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">
-                <img class="logo" src="assets/img/Logo.2ai.png" alt="Logo Mayéutica">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                </ul>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="assets/img/Logo.2ai.png" alt="logo mauyetica">
             </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+                <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                <li><a href="#valores" class="nav__link">Valores</a></li>
+                <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero__background">
+            <div class="hero__pattern"></div>
         </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <div class="d-flex justify-content-center">
-                <div class="text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by
-                        Start Bootstrap.</h2>
-                    <a class="btn btn-primary" href="#about">Get Started</a>
+        <div class="container hero__content">
+            <div class="hero__text">
+                <h1 class="hero__title">
+                    Transformando <span class="highlight">realidades</span> a través de la educación y el diálogo
+                </h1>
+                <p class="hero__subtitle">
+                    Espacios lúdico-pedagógicos que promueven la consciencia social y el cambio transformador en
+                    individuos, familias y comunidades
+                </p>
+                <div class="hero__cta">
+                    <a href="#proyectos" class="btn btn--primary">Conoce nuestros proyectos</a>
+                    <a href="#contacto" class="btn btn--secondary">Contáctanos</a>
                 </div>
             </div>
+            <div class="hero__image">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop"
+                    alt="Personas conectando manos en círculo" loading="lazy">
+            </div>
         </div>
-    </header>
-    <!-- About-->
-    <section class="about-section text-center" id="about">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
-                    <p class="text-white-50">
-                        Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now,
-                        simply download the template on
-                        <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                        The theme is open source, and you can use it for any purpose, personal or commercial.
+        <div class="scroll-indicator">
+            <span>Descubre más</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5v14m0 0l7-7m-7 7l-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor -->
+    <section class="value-prop">
+        <div class="container">
+            <div class="value-prop__box">
+                <p class="value-prop__text">
+                    "Acompañamos procesos de transformación integral creando espacios de reflexión, aprendizaje y
+                    empoderamiento para construir una sociedad más justa, inclusiva y equitativa"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nuestro equipo</span>
+                <h2 class="section-title">¿Quiénes somos?</h2>
+            </div>
+            <div class="about__content">
+                <div class="about__text">
+                    <p class="lead">
+                        Somos un equipo de <strong>Trabajadoras Sociales</strong> comprometidas con el desarrollo
+                        integral de personas y comunidades.
+                    </p>
+                    <p>
+                        A través de encuentros, talleres y espacios pedagógicos, promovemos la reflexión, el
+                        conocimiento y el fortalecimiento de habilidades para afrontar desafíos y mejorar la calidad de
+                        vida.
+                    </p>
+                    <p>
+                        Nuestro propósito es llegar a diferentes familias, instituciones educativas, organizaciones y
+                        comunidades que deseen transformar sus realidades, fomentando el
+                        <strong>empoderamiento</strong>, la <strong>participación activa</strong> y la creación de
+                        condiciones propicias para el crecimiento personal y colectivo.
                     </p>
                 </div>
-            </div>
-            <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
-        </div>
-    </section>
-    <!-- Projects-->
-    <section class="projects-section bg-light" id="projects">
-        <div class="container px-4 px-lg-5">
-            <!-- Featured Project Row-->
-            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg"
-                        alt="..." /></div>
-                <div class="col-xl-4 col-lg-5">
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>Shoreline</h4>
-                        <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use
-                            it for any project - even commercial projects! Download it, customize it, and publish your
-                            website!</p>
-                    </div>
+                <div class="about__image">
+                    <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&h=800&fit=crop"
+                        alt="Trabajadoras sociales en acción" loading="lazy">
                 </div>
             </div>
-            <!-- Project One Row-->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Misty</h4>
-                                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or
-                                    anything else, along with a description.</p>
-                            </div>
-                        </div>
+
+            <!-- Misión y Visión -->
+            <div class="mission-vision">
+                <article class="mv-card">
+                    <div class="mv-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                </div>
-            </div>
-            <!-- Project Two Row-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Mountains</h4>
-                                <p class="mb-0 text-white-50">Another example of a project with its respective
-                                    description. These sections work well responsively as well!</p>
-                            </div>
-                        </div>
+                    <h3 class="mv-card__title">Misión</h3>
+                    <p class="mv-card__text">
+                        Ofrecer espacios lúdico-pedagógicos donde se promueva la consciencia de la propia realidad
+                        social, familiar, organizacional, laboral y comunitaria, fomentando el cambio y la
+                        transformación social.
+                    </p>
+                </article>
+                <article class="mv-card">
+                    <div class="mv-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                </div>
+                    <h3 class="mv-card__title">Visión 2030</h3>
+                    <p class="mv-card__text">
+                        Ser una red de apoyo integral y activa que acompaña y orienta en la transformación de
+                        individuos, familias, grupos, organizaciones e instituciones educativas, promoviendo su
+                        bienestar, desarrollo y cohesión social.
+                    </p>
+                </article>
             </div>
         </div>
     </section>
-    <!-- Signup-->
-    <section class="signup-section" id="signup">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-10 col-lg-8 mx-auto text-center">
-                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                    <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Email address input-->
-                        <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="emailAddress" type="email"
-                                    placeholder="Enter email address..." aria-label="Enter email address..."
-                                    data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton"
-                                    type="submit">Notify Me!</button></div>
+
+    <!-- Valores -->
+    <section class="values" id="valores">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nuestros principios</span>
+                <h2 class="section-title">Valores que nos guían</h2>
+                <p class="section-description">
+                    Fundamentados en los principios esenciales del Trabajo Social, estos valores guían nuestra misión y
+                    forma de actuar
+                </p>
+            </div>
+            <div class="values__grid">
+                <article class="value-card">
+                    <h3>Dignidad Humana</h3>
+                    <p>Reconocemos y valoramos la integridad y el valor inherente de cada persona</p>
+                </article>
+                <article class="value-card">
+                    <h3>Justicia Social</h3>
+                    <p>Promovemos la igualdad de oportunidades y luchamos contra las desigualdades</p>
+                </article>
+                <article class="value-card">
+                    <h3>Solidaridad</h3>
+                    <p>Fomentamos la colaboración, el apoyo mutuo y el compromiso con la comunidad</p>
+                </article>
+                <article class="value-card">
+                    <h3>Respeto</h3>
+                    <p>Valoramos las diferentes opiniones, culturas y experiencias de cada participante</p>
+                </article>
+                <article class="value-card">
+                    <h3>Libertad</h3>
+                    <p>Fomentamos la autonomía y el derecho a expresar ideas y decisiones</p>
+                </article>
+                <article class="value-card">
+                    <h3>Igualdad</h3>
+                    <p>Aseguramos que todos sean tratados con justicia, sin discriminación alguna</p>
+                </article>
+                <article class="value-card">
+                    <h3>Confidencialidad</h3>
+                    <p>Respetamos la privacidad creando un ambiente de confianza y seguridad</p>
+                </article>
+                <article class="value-card">
+                    <h3>Compromiso</h3>
+                    <p>Dedicados a generar un impacto positivo en la vida de nuestros participantes</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="projects" id="proyectos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Lo que hacemos</span>
+                <h2 class="section-title">Nuestros proyectos</h2>
+            </div>
+
+            <!-- Manos Transformadoras -->
+            <article class="project-feature">
+                <div class="project-feature__image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
+                        alt="Equipo trabajando en taller" loading="lazy">
+                </div>
+                <div class="project-feature__content">
+                    <h3 class="project-feature__title">Manos Transformadoras</h3>
+                    <p class="project-feature__description">
+                        Talleres y encuentros lúdico-reflexivos orientados a organizaciones, entidades empresariales y
+                        comunidades. Promovemos la transformación social a través de la autoconsciencia.
+                    </p>
+                    <div class="project-feature__details">
+                        <h4>Para organizaciones y empresas:</h4>
+                        <ul class="topics-list">
+                            <li>Gestión del bienestar y salud mental</li>
+                            <li>Comunicación efectiva y asertiva</li>
+                            <li>Liderazgo y motivación</li>
+                            <li>Trabajo en equipo y colaboración</li>
+                            <li>Gestión del estrés y prevención del burnout</li>
+                            <li>Inteligencia emocional en el entorno laboral</li>
+                            <li>Inclusión y diversidad</li>
+                            <li>Resolución de conflictos</li>
+                        </ul>
+                        <h4>Para comunidades:</h4>
+                        <p><strong>Adultos mayores:</strong> Programa "Mente activa, vida plena" con 7 sesiones
+                            enfocadas en memoria, atención, lenguaje, pensamiento lógico y motricidad.</p>
+                    </div>
+                    <span class="badge">Modalidad virtual o presencial</span>
+                </div>
+            </article>
+
+            <!-- Familias en Movimiento -->
+            <article class="project-feature project-feature--reverse">
+                <div class="project-feature__image">
+                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=600&fit=crop"
+                        alt="Familia feliz" loading="lazy">
+                </div>
+                <div class="project-feature__content">
+                    <h3 class="project-feature__title">Familias en Movimiento</h3>
+                    <p class="project-feature__description">
+                        Orientación y acompañamiento integral y personalizado a familias en sus diversos procesos para
+                        tejer cambios en sus dinámicas.
+                    </p>
+                    <div class="project-feature__details">
+                        <h4>¿Qué ofrecemos?</h4>
+                        <ul class="topics-list">
+                            <li>Evaluación de necesidades en la dinámica familiar</li>
+                            <li>Intervenciones individuales (mínimo 3 sesiones)</li>
+                            <li>Gestión de espacios para atención integral</li>
+                        </ul>
+                        <p class="note"><strong>Nota importante:</strong> No realizamos terapias familiares</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tejiendo Educa -->
+            <article class="project-feature">
+                <div class="project-feature__image">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop"
+                        alt="Educación y aprendizaje" loading="lazy">
+                </div>
+                <div class="project-feature__content">
+                    <h3 class="project-feature__title">Tejiendo Educa</h3>
+                    <p class="project-feature__description">
+                        Facilitamos el aprendizaje y crecimiento de profesionales del Trabajo Social y personas
+                        interesadas, mediante clases virtuales gratuitas, ebooks y material audiovisual.
+                    </p>
+                    <div class="project-feature__details">
+                        <h4>Recursos disponibles:</h4>
+                        <ul class="topics-list">
+                            <li>Serie de videos: "Conoce acerca del Trabajo Social"</li>
+                            <li>Ebook: "30 dinámicas para trabajo con familias"</li>
+                            <li>PDF: "Tejiendo cambio - 10 maneras de transformar tu comunidad"</li>
+                            <li>Guía de redes de apoyo y recursos comunitarios</li>
+                        </ul>
+                    </div>
+                    <span class="badge badge--free">Contenido gratuito</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Garantías -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee__content">
+                <h2 class="guarantee__title">Nuestro compromiso contigo</h2>
+                <p class="guarantee__text">
+                    En <strong>Mayéutica</strong> queremos aportar nuestro granito de arena a través de talleres,
+                    material educativo y sesiones individuales. Te acompañamos en el proceso para que tú seas tu propio
+                    tejedor de cambios.
+                </p>
+                <p class="guarantee__text">
+                    No garantizamos que tu vida dará un giro de 360 grados, pero sí uno de <strong>180 grados</strong>
+                    donde podrás ver todo desde una perspectiva distinta y tendrás las herramientas para lograr el
+                    cambio que buscas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Conversemos</span>
+                <h2 class="section-title">Tejamos cambios juntos</h2>
+                <p class="section-description">
+                    ¿Listo para transformar tu realidad? Contáctanos y empecemos a tejer el cambio
+                </p>
+            </div>
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is
-                            required.</div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.
+                        <div>
+                            <h4>Teléfonos</h4>
+                            <p><a href="tel:+573106508929">310 650 8929</a></p>
+                            <p><a href="tel:+573013525276">301 352 5276</a></p>
                         </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2 text-white">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
+                        <div>
+                            <h4>Correo electrónico</h4>
+                            <p><a href="mailto:contacto@mayeutica.com">contacto@mayeutica.com</a></p>
                         </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Manizales, Caldas<br>Colombia</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--<div class="contact__form-container">
+                    <form class="contact__form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">¿Qué te interesa?</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="manos">Manos Transformadoras</option>
+                                <option value="familias">Familias en Movimiento</option>
+                                <option value="educa">Tejiendo Educa</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
                     </form>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
-    <!-- Contact-->
-    <section class="contact-section bg-black">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Address</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                        </div>
-                    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Mayéutica</h3>
+                    <p class="footer__tagline">Tejiendo cambio, construyendo futuro</p>
+                    <p class="footer__text">
+                        Espacios de transformación social para individuos, familias y comunidades comprometidas con el
+                        cambio.
+                    </p>
                 </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Email</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-                        </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Proyectos</h4>
+                        <ul>
+                            <li><a href="#proyectos">Manos Transformadoras</a></li>
+                            <li><a href="#proyectos">Familias en Movimiento</a></li>
+                            <li><a href="#proyectos">Tejiendo Educa</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">+1 (555) 902-8832</div>
-                        </div>
+                    <div class="footer__column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#nosotros">Quiénes somos</a></li>
+                            <li><a href="#valores">Valores</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="social d-flex justify-content-center">
-                <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Mayéutica. Todos los derechos reservados.</p>
+                <p>Diseñado con 💚 para transformar comunidades</p>
             </div>
         </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
